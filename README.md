@@ -9,7 +9,7 @@ cursor.
 
 Perl variables, of all types, will be highlighted.
 
-# Credit
+## Credit
 
 This was all spawned by [Ovid](https://github.com/ovid) who came up with the
 idea to do this for perl. [Paul Johnson](https://github.com/pjcj) created a
@@ -31,4 +31,9 @@ You can customise the highlighting applied by this plugin by creating a highligh
 group name `PerlVarHiLight` in your `.vimrc`. For example:
 
     highlight PerlVarHiLight ctermbg=black guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
+
+## Support 
+
+I'm happy about pull requests. If you happen to have any questions or if you are
+in the mood for a flame war, join `#vim` on `irc.perl.org`.
 
