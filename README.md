@@ -1,7 +1,4 @@
 vim-perl-variable-highlighter
-=============================
-
-# Vim plugin to highlight variables in Perl
 
 This Vim plugin will highlight all instances of the Perl variable under the
 cursor.
@@ -24,14 +21,14 @@ with what you are reading now.
 
 If you are using a package manager such as *Vundle* or *Pathogen*, this plugin
 should be installed in the standard manner.  If you are not (why not?), you
-could just copy *plugin/perl-variable-highlighter.vim* into your *~/.vim/plugins* directory.
+could just copy `plugin/perl-variable-highlighter.vim` into your `~/.vim/plugins` directory.
 
 Requires Vim version 7.3 or later.
 
 ## Configuration
 
 You can customise the highlighting applied by this plugin by creating a highlight
-group name *PerlVarHiLight* in your *.vimrc*. For example:
+group name `PerlVarHiLight` in your `.vimrc`. For example:
 
- highlight PerlVarHiLight ctermbg=black guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
+    highlight PerlVarHiLight ctermbg=black guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
 
