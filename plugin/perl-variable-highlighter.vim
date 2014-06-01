@@ -36,5 +36,5 @@ augroup END
 " favorite colors by having a "highlight PerlVarHiLight ..." statement
 " in their .vimrc
 if ( ! hlexists( 'PerlVarHiLight' ) )
-    highlight PerlVarHiLight ctermbg=NONE guibg=NONE guifg=lightred ctermfg=red gui=NONE
+    highlight PerlVarHiLight ctermbg=NONE guibg=NONE guifg=LightRed ctermfg=Red gui=NONE
 endif
