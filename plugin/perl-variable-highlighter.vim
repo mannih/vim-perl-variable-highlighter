@@ -37,7 +37,7 @@ if ( ! exists( "g:hlvarnoauto" ) || g:hlvarnoauto == 1 )
     " favorite colors by having a "highlight PerlVarHiLight ..." statement
     " in their .vimrc
     if ( ! hlexists( 'PerlVarHiLight' ) )
-        highlight PerlVarHiLight ctermbg=black guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
+        highlight PerlVarHiLight ctermbg=NONE guibg=NONE guifg=lightred ctermfg=red gui=NONE
     endif
 
     command! HlVar :call <SID>highlight_perl_variable()
