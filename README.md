@@ -1,4 +1,4 @@
-vim-perl-variable-highlighter
+# vim-perl-variable-highlighter
 
 This Vim plugin will highlight all instances of the Perl variable under the
 cursor.
