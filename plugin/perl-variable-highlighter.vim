@@ -25,20 +25,16 @@ function! s:highlight_perl_variable()
 endfunction
 
 
-if ( ! exists( "g:hlvarnoauto" ) || g:hlvarnoauto == 1 )
-    augroup HighlightVar
-        autocmd!
-        au FileType perl :au CursorMoved * call <SID>highlight_perl_variable()
-        au FileType perl :au CursorMovedI * call <SID>highlight_perl_variable()
-    augroup END
+augroup HighlightVar
+    autocmd!
+    au FileType perl :au CursorMoved * call <SID>highlight_perl_variable()
+    au FileType perl :au CursorMovedI * call <SID>highlight_perl_variable()
+augroup END
 
-    " only add the highlight group if it doesn't already exist.
-    " this way, users can define their own highlighting with their
-    " favorite colors by having a "highlight PerlVarHiLight ..." statement
-    " in their .vimrc
-    if ( ! hlexists( 'PerlVarHiLight' ) )
-        highlight PerlVarHiLight ctermbg=NONE guibg=NONE guifg=lightred ctermfg=red gui=NONE
-    endif
-
-    command! HlVar :call <SID>highlight_perl_variable()
+" only add the highlight group if it doesn't already exist.
+" this way, users can define their own highlighting with their
+" favorite colors by having a "highlight PerlVarHiLight ..." statement
+" in their .vimrc
+if ( ! hlexists( 'PerlVarHiLight' ) )
+    highlight PerlVarHiLight ctermbg=NONE guibg=NONE guifg=lightred ctermfg=red gui=NONE
 endif
