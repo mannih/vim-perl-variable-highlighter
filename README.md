@@ -37,3 +37,9 @@ group name `PerlVarHiLight` in your `.vimrc`. For example:
 I'm happy about pull requests. If you happen to have any questions or if you are
 in the mood for a flame war, join `#vim` on `irc.perl.org`.
 
+## See also
+
+Damian Conway's version of this is far more advanced. See
+[his talk at the Perl Conference 2016](https://www.youtube.com/watch?v=9u6O0dLuqhI)
+and his [trackperlvars vim plugin](https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/trackperlvars.vim)
+
